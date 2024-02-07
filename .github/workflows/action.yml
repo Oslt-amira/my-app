@@ -1,5 +1,4 @@
-name: Next.js action 01 
-
+name: Next.js action 01
 
 on:
   push:
@@ -17,12 +16,10 @@ jobs:
       - name: Install Node.js and NPM
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts-alpine'
+          node-version: "20"
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Next.js Application
         run: npm run build
-
-
